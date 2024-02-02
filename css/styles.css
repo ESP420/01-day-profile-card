@@ -33,12 +33,11 @@ Tabla de contenidos:
 body {
 	background-color: var(--body-bg-color);
 	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	color: var(--text-color);
 	line-height: var(--lh-text);
 	font-family: var(--primary-font-family);
+	display: flex;
+	align-items: center;
 }
 
 img {
@@ -51,11 +50,14 @@ img {
 Diseño: UIDesign Daily🎨
 Desarrollo: Frontend Club🔥
 --------------------------- */
-profile-card {}
+#profile-card {
+	width: 300px;
+	margin: 0 auto;
+}
 
 .card {
 	background-color: var(--card-bg-color);
-	width: 320px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -66,9 +68,9 @@ profile-card {}
 
 }
 
+
+
 .card__header {
-	padding: 20px;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -125,6 +127,10 @@ profile-card {}
 
 }
 
+.social--icon:hover {
+	scale: 1.5;
+}
+
 .social--tw {
 	color: var(--ig-bg-color);
 
@@ -141,19 +147,19 @@ profile-card {}
 }
 
 @media (min-width:375px) {
-	.card {
 
-
-		width: 370px;
+	#profile-card {
+		width: 350px;
 	}
+
 }
 
 @media (min-width:425px) {
-	.card {
 
-
+	#profile-card {
 		width: 400px;
 	}
+
 }
 
 /* *********---- TABLET ----********* */
