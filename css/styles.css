@@ -55,7 +55,7 @@ profile-card {}
 
 .card {
 	background-color: var(--card-bg-color);
-	width: 400px;
+	width: 320px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -140,6 +140,21 @@ profile-card {}
 
 }
 
+@media (min-width:375px) {
+	.card {
+
+
+		width: 370px;
+	}
+}
+
+@media (min-width:425px) {
+	.card {
+
+
+		width: 400px;
+	}
+}
 
 /* *********---- TABLET ----********* */
 @media (min-width:576px) {}
